@@ -7,7 +7,7 @@ class Card extends Component {
       <React.Fragment>
         <Draggable>
           <div
-            className="card text-white bg-dark mb-3"
+            className="card text-black bg-light mb-3"
             style={{ maxWidth: "18rem", cursor: "pointer" }}
           >
             <div className="card-header">Header</div>
