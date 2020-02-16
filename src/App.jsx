@@ -2,17 +2,20 @@ import React, { Component } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CardGroup from "./components/card-group/card-group";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Navbar from "./components/navbar";
+// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 class App extends Component {
   state = {};
   render() {
     return (
-      <div className="App">
-        <div className="d-flex">
-          <CardGroup />
+      <React.Fragment>
+        <Navbar />
+        <div className="App">
+          <div className="d-flex">
+            <CardGroup />
+          </div>
         </div>
-
         {/* <Router>
           <div>
             <nav>
@@ -30,7 +33,7 @@ class App extends Component {
             </Switch>
           </div>
         </Router> */}
-      </div>
+      </React.Fragment>
     );
   }
 }

@@ -5,7 +5,8 @@ class CardGroup extends Component {
     return (
       <React.Fragment>
         <div className="group">
-          <h1>Hello</h1>
+          <p style={{ fontWeight: "500" }}> List of tasks</p>
+          <p>+ Add another card</p>
         </div>
       </React.Fragment>
     );
