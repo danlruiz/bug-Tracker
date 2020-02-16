@@ -5,3 +5,8 @@
   width: 300px;
   margin: 15px;
 }
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
