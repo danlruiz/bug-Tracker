@@ -4,7 +4,7 @@ class Boards extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="App">
+        <div>
           <div className="d-flex">
             <CardGroup />
           </div>

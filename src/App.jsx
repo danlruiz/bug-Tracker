@@ -10,7 +10,7 @@ class App extends Component {
   state = {};
   render() {
     return (
-      <React.Fragment>
+      <React.Fragment className="page">
         <Navbar />
         <Router>
           <Switch>

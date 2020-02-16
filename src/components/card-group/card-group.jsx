@@ -6,12 +6,15 @@ class CardGroup extends Component {
     return (
       <React.Fragment>
         <div className="group">
-          <p style={{ fontWeight: "500" }}> List of tasks</p>
+          <p style={{ fontWeight: "500" }} className="mt-3 text-center">
+            {" "}
+            List of tasks
+          </p>
           <div className="cards">
             <Card />
             <Card />
           </div>
-          <p>+ Add another card</p>
+          <p className="text-center">+ Add another card</p>
         </div>
       </React.Fragment>
     );
