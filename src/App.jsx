@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import CardGroup from "./components/card-group/card-group";
 import Navbar from "./components/navbar";
-// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./views/home/Home";
+import Boards from "./views/boards/Boards";
 
 class App extends Component {
   state = {};
@@ -11,28 +12,16 @@ class App extends Component {
     return (
       <React.Fragment>
         <Navbar />
-        <div className="App">
-          <div className="d-flex">
-            <CardGroup />
-          </div>
-        </div>
-        {/* <Router>
-          <div>
-            <nav>
-              <ul>
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-
-              </ul>
-            </nav>
-            <Switch>
-              <Route path="/">
-                <CardGroup />
-              </Route>
-            </Switch>
-          </div>
-        </Router> */}
+        <Router>
+          <Switch>
+            <Route path="/boards">
+              <Boards />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </Router>
       </React.Fragment>
     );
   }
