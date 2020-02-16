@@ -1,0 +1,11 @@
+ul {
+  list-style-type: none;
+  margin: 20px;
+}
+
+.board-image {
+  width: 300px;
+  height: 200px;
+  background-color: #d3d3d3;
+  border-radius: 10px;
+}

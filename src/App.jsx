@@ -14,12 +14,8 @@ class App extends Component {
         <Navbar />
         <Router>
           <Switch>
-            <Route path="/boards">
-              <Boards />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
+            <Route path="/boards" component={Boards} />
+            <Route exact path="/" component={Home} />
           </Switch>
         </Router>
       </React.Fragment>
