@@ -1,9 +1,11 @@
 import React from "react";
 import Draggable from "react-draggable"; // Both at the same time
 import { useSelector, useDispatch } from "react-redux";
-import { increment } from "../actions/index";
+import { increment, decrement } from "../actions/index";
 
 function Card() {
+  const counter = useSelector(state => state.counter);
+  const dispatch = useDispatch();
   return (
     <React.Fragment>
       <Draggable>
@@ -15,7 +17,21 @@ function Card() {
             borderRadius: "10px"
           }}
         >
-          <div className="card-header">Counter</div>
+          <div className="card-header">
+            Counter {counter}{" "}
+            <button
+              onClick={() => dispatch(increment(2))}
+              className="btn btn-primary"
+            >
+              +
+            </button>
+            <button
+              onClick={() => dispatch(decrement(2))}
+              className="btn btn-danger"
+            >
+              -
+            </button>
+          </div>
           <div className="card-body">
             <p className="card-text">
               Some quick example text to build on the card title and make up the
