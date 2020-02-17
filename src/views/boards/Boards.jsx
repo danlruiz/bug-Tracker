@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./boards.css";
 import CardGroup from "../../components/card-group/card-group";
+
 class Boards extends Component {
   render() {
     return (

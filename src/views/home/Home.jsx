@@ -8,7 +8,7 @@ class Home extends Component {
         <div className="mt-5">
           <div className="row">
             <div className="col-3 nopadding">
-              <h4 className="text-center" style={{ marginTop: "25vh" }}>
+              <h4 className="text-center" style={{ marginTop: "20vh" }}>
                 Your workspaces
               </h4>
               <ul>
@@ -25,7 +25,7 @@ class Home extends Component {
             </div>
             <div className="col-9 nopadding">
               <h1 style={{ marginTop: "10vh" }}>Your boards</h1>
-              <div className="row mt-4">
+              <div className="row mt-5">
                 <Link to="/boards">
                   <div className="board-image"></div>
                 </Link>

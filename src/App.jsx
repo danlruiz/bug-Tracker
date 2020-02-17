@@ -7,7 +7,6 @@ import Home from "./views/home/Home";
 import Boards from "./views/boards/Boards";
 
 class App extends Component {
-  state = {};
   render() {
     return (
       <React.Fragment>
