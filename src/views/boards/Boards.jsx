@@ -9,6 +9,7 @@ class Boards extends Component {
         <div className="full-page">
           <div className="d-flex" style={{ paddingTop: "8vh" }}>
             <CardGroup />
+            <CardGroup />
           </div>
         </div>
       </React.Fragment>
