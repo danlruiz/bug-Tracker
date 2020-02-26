@@ -1,5 +1,5 @@
 import React from "react";
-import Draggable from "react-draggable"; // Both at the same time
+import { Draggable } from "react-beautiful-dnd"; // Both at the same time
 import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement } from "../actions/index";
 
@@ -7,9 +7,12 @@ function Card() {
   const counter = useSelector(state => state.counter);
   const dispatch = useDispatch();
   return (
-    <React.Fragment>
-      <Draggable>
+    <Draggable>
+      {(provided, snapshot) => (
         <div
+          ref={provided.innerRef}
+          {...provided.draggableProps}
+          {...provided.dragHandleProps}
           className="card text-black bg-light mb-3"
           style={{
             maxWidth: "18rem",
@@ -39,8 +42,8 @@ function Card() {
             </p>
           </div>
         </div>
-      </Draggable>
-    </React.Fragment>
+      )}
+    </Draggable>
   );
 }
 
