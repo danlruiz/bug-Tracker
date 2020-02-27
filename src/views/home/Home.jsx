@@ -15,12 +15,8 @@ class Home extends Component {
                 <li>
                   <Link to="/boards">Project</Link>
                 </li>
-                <li>
-                  <Link>Company</Link>
-                </li>
-                <li>
-                  <Link>Client</Link>
-                </li>
+                <li>{/* <Link>Company</Link> */}</li>
+                <li>{/* <Link>Client</Link> */}</li>
               </ul>
             </div>
             <div className="col-9 nopadding">
